@@ -25,6 +25,10 @@ html {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul {
   list-style: none;
 }
@@ -65,7 +69,7 @@ ul {
   height: calc(100vh - 140px);
   padding: 55px 0;
   background-color: var(--color-background);
-  background-image: url(../images/background-hero-2.jpg);
+  background-image: url(../images/background-hero-3.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
