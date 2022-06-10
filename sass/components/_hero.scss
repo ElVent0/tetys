@@ -1,7 +1,8 @@
 .hero {
-  height: calc(100vh - 200px);
+  height: calc(100vh - 140px);
   padding: 55px 0;
   background-color: var(--color-background);
+  background-image: url(../images/background-hero-2.jpg);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
@@ -27,6 +28,7 @@
   }
 }
 .hero__paragraph {
+  color: var(--color-text);
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 140px;
