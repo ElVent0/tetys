@@ -66,8 +66,7 @@ ul {
 }
 
 .hero {
-  height: calc(100vh - 150px);
-  padding: 55px 0;
+  padding: 55px 0 110px 0;
   background-color: var(--color-background);
   background-image: url(../images/background-hero-3.jpg);
   background-repeat: no-repeat;
@@ -101,7 +100,7 @@ ul {
   color: var(--color-text);
   font-size: 14px;
   line-height: 1.71;
-  margin-bottom: 140px;
+  margin-bottom: 60px;
   max-width: 230px;
 }
 
@@ -112,8 +111,7 @@ ul {
   -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
   border-radius: 50%;
-  position: absolute;
-  bottom: 120px;
+  position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
