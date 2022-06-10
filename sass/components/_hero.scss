@@ -45,11 +45,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover > .hero__icon,
+  &:focus > .hero__icon {
+    transform: rotate(360deg);
+  }
 }
 .hero__icon {
   width: 30px;
   height: 30px;
   fill: var(--color-main);
+  transition: 0.5s;
 }
 
 .hero__waves {
