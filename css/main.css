@@ -257,26 +257,26 @@ ul {
 }
 
 .tests__background {
-  height: 94px;
+  height: 160px;
   border-radius: 14px 14px 0 0;
 }
 .tests__background--first {
-  background-image: url(../images/item-1.jpg);
+  background-image: url(../images/nevergiveup.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 424px 94px;
+  background-size: 424px 160px;
 }
 .tests__background--second {
-  background-image: url(../images/item-2.jpg);
+  background-image: url(../images/nevergiveup.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 424px 94px;
+  background-size: 424px 160px;
 }
 .tests__background--third {
-  background-image: url(../images/item-3.jpg);
+  background-image: url(../images/nevergiveup.jpg);
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 424px 94px;
+  background-size: 424px 160px;
 }
 
 .tests__text {
@@ -286,15 +286,16 @@ ul {
 
 .tests__paragraph {
   margin-bottom: 8px;
-  color: var(--color-text);
+  color: rgba(21, 37, 80, 0.6);
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
+.tests__paragraph:first-child {
+  font-size: 16px;
+  color: var(--color-text);
+}
 .tests__paragraph:last-child {
   margin-bottom: 0;
-}
-.tests__paragraph:first-child {
-  color: var(--color-main);
 }
 
 .tests__icon {
@@ -335,4 +336,39 @@ ul {
 use {
   width: 100%;
   height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main__audio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/background-audio-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__link-back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.header__icon-back {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  fill: var(--color-background);
+}
+
+.main__audio--one {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }/*# sourceMappingURL=main.css.map */

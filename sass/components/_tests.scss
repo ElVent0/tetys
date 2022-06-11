@@ -23,25 +23,25 @@
   padding: 22px 27px 22px 27px;
 }
 .tests__background {
-  height: 94px;
+  height: 160px;
   border-radius: 14px 14px 0 0;
   &--first {
-    background-image: url(../images/item-1.jpg);
+    background-image: url(../images/nevergiveup.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 424px 94px;
+    background-size: 424px 160px;
   }
   &--second {
-    background-image: url(../images/item-2.jpg);
+    background-image: url(../images/nevergiveup.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 424px 94px;
+    background-size: 424px 160px;
   }
   &--third {
-    background-image: url(../images/item-3.jpg);
+    background-image: url(../images/nevergiveup.jpg);
     background-repeat: no-repeat;
     background-position: top;
-    background-size: 424px 94px;
+    background-size: 424px 160px;
   }
 }
 .tests__text {
@@ -50,13 +50,14 @@
 }
 .tests__paragraph {
   margin-bottom: 8px;
-  color: var(--color-text);
+  color: rgba(21, 37, 80, 0.6);
   transition: color 0.3s;
+  &:first-child {
+    font-size: 16px;
+    color: var(--color-text);
+  }
   &:last-child {
     margin-bottom: 0;
-  }
-  &:first-child {
-    color: var(--color-main);
   }
 }
 .tests__icon {

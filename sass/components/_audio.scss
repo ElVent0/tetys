@@ -1,0 +1,29 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.main__audio {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/background-audio-1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.header__link-back {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.header__icon-back {
+  transform: rotate(90deg);
+  fill: var(--color-background);
+}
+.main__audio--one {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
