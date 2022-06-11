@@ -1,5 +1,5 @@
 .hero {
-  padding: 55px 0 110px 0;
+  padding: 55px 0 130px 0;
   background-color: var(--color-background);
   background-image: url(../images/background-hero-3.jpg);
   background-repeat: no-repeat;
@@ -8,21 +8,21 @@
   position: relative;
 }
 .hero__logo {
-  margin-bottom: 30px;
+  margin-bottom: 120px;
 }
 .hero__title {
   font-family: "Playfair Display";
   font-weight: 400;
-  font-size: 42px;
+  font-size: 62px;
   line-height: 56px;
   color: #537dee;
   margin-bottom: 4px;
   &::after {
-    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
+    content: "\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0\00a0";
     font-size: 20px;
     position: relative;
     top: 12px;
-    right: 80px;
+    left: -120px;
     background-color: rgba(83, 125, 238, 0.1);
   }
 }
