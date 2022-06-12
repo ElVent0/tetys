@@ -21,10 +21,12 @@
   display: flex;
   align-items: center;
   padding: 22px 27px 22px 27px;
+  position: relative;
 }
 .tests__background {
   height: 160px;
   border-radius: 14px 14px 0 0;
+  position: relative;
   &--first {
     background-image: url(../images/nevergiveup.jpg);
     background-repeat: no-repeat;
@@ -42,6 +44,30 @@
     background-repeat: no-repeat;
     background-position: top;
     background-size: 424px 160px;
+  }
+}
+.tests__background-list {
+  display: flex;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.tests__background-item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.tests__background-link {
+  display: block;
+  border-radius: 10px;
+  padding: 4px 8px;
+  color: var(--color-background);
+  &--motivation {
+    background-color: rgb(224, 145, 0);
+  }
+  &--work-hard {
+    background-color: rgb(146, 0, 224);
   }
 }
 .tests__text {

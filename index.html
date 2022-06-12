@@ -25,12 +25,30 @@
     <main>
       <div class="hero">
         <div class="container container__hero">
-          <img
-            src="./images/logo-huge.png"
-            alt="Логотип"
-            class="hero__logo"
-            width="60"
-          />
+          <div class="hero__header">
+            <img
+              src="./images/logo-huge.png"
+              alt="Логотип"
+              class="hero__logo"
+              width="60"
+            />
+            <button
+              class="header__button"
+              type="button"
+              data-menu-button
+              aria-expanded="false"
+              data-modal-open
+            >
+              <svg
+                width="20"
+                aria-label="Перемикач мобільного меню"
+                class="header__burger-svg"
+                viewBox="0 0 32 32"
+              >
+                <use href="./images/sprite.svg#icon-Burger-btn"></use>
+              </svg>
+            </button>
+          </div>
           <h1 class="hero__title">tetis</h1>
           <p class="hero__paragraph">
             Your audio library where you can find yourself
@@ -40,72 +58,173 @@
               <use href="./images/sprite.svg#icon-arrow"></use>
             </svg>
           </a>
-          </div>
-          <div class="hero__waves">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-              <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-              </defs>
-              <g class="parallax">
-               <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(83, 125, 238, .7)" />
-                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(83, 125, 238, .5)" />
-                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(83, 125, 238, .3)" />
-                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(83, 125, 238, 1)" />
-              </g>
-            </svg>
-          </div>
         </div>
+        <div class="hero__waves">
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(83, 125, 238, .7)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(83, 125, 238, .5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(83, 125, 238, .3)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="7"
+                fill="rgba(83, 125, 238, 1)"
+              />
+            </g>
+          </svg>
+        </div>
+      </div>
+      <div class="mobile__menu container__menu is-hidden" data-modal>
+        <ul class="mobile__list">
+          <li class="mobile__item">
+            <a href="#home" class="mobile__link" data-modal-home>motivation</a>
+          </li>
+          <li class="mobile__item">
+            <a href="#advantages" class="mobile__link" data-modal-about
+              >work hard</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="#about" class="mobile__link" data-modal-how>study</a>
+          </li>
+          <li class="mobile__item">
+            <a href="#products" class="mobile__link" data-modal-products
+              >relax</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="#contacts" class="mobile__link" data-modal-contacts
+              >addrenaline</a
+            >
+          </li>
+        </ul>
+        <button class="close__btn" data-modal-close>
+          <svg width="20px" height="20px" class="close__icon">
+            <use href="./images/sprite.svg#icon-Burger-btn-close"></use>
+          </svg>
+        </button>
       </div>
       <div class="tests" id="tests">
         <div class="container">
           <ul class="tests__list">
             <li class="tests__item">
-              <a 
-              href="./audio-one.html"
-              rel="nofollow noopener" 
-              class="tests__link">
-              <div class="tests__background tests__background--first"></div>
-              <div class="tests__content">
-              <div class="tests__text">
-                <p class="tests__paragraph">Never give up</p>
-                <p class="tests__paragraph">10 min</p></div>
-              <svg class="tests__icon" width="25">
-                <use href="./images/sprite.svg#icon-arrow"></use>
-              </svg>
-              </div>
+              <a
+                href="./audio-one.html"
+                rel="nofollow noopener"
+                class="tests__link"
+              >
+                <div class="tests__background tests__background--first">
+                  <ul class="tests__background-list">
+                    <li class="tests__background-item">
+                      <a
+                        class="tests__background-link tests__background-link--motivation"
+                        >motivation</a
+                      >
+                    </li>
+                    <li class="tests__background-item">
+                      <a
+                        class="tests__background-link tests__background-link--work-hard"
+                        >work hard</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="tests__content">
+                  <div class="tests__text">
+                    <p class="tests__paragraph">Never give up</p>
+                    <p class="tests__paragraph">10 min</p>
+                  </div>
+                  <svg class="tests__icon" width="25">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="tests__item">
-              <a 
-              href=""
-              rel="nofollow noopener" 
-              class="tests__link">
-              <div class="tests__background tests__background--second"></div>
-              <div class="tests__content">
-              <div class="tests__text">
-                <p class="tests__paragraph">Never give up</p>
-                <p class="tests__paragraph">10 min</p></div>
-              <svg class="tests__icon" width="25">
-                <use href="./images/sprite.svg#icon-arrow"></use>
-              </svg>
-              </div>
+              <a href="" rel="nofollow noopener" class="tests__link">
+                <div class="tests__background tests__background--second">
+                  <ul class="tests__background-list">
+                    <li class="tests__background-item">
+                      <a
+                        class="tests__background-link tests__background-link--motivation"
+                        >motivation</a
+                      >
+                    </li>
+                    <li class="tests__background-item">
+                      <a
+                        class="tests__background-link tests__background-link--work-hard"
+                        >work hard</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="tests__content">
+                  <div class="tests__text">
+                    <p class="tests__paragraph">Never give up</p>
+                    <p class="tests__paragraph">10 min</p>
+                  </div>
+                  <svg class="tests__icon" width="25">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
               </a>
             </li>
             <li class="tests__item">
-              <a 
-              href=""
-              rel="nofollow noopener" 
-              class="tests__link">
-              <div class="tests__background tests__background--third"></div>
-              <div class="tests__content">
-              <div class="tests__text">
-                <p class="tests__paragraph">Never give up</p>
-                <p class="tests__paragraph">10 min</p></div>
-              <svg class="tests__icon" width="25">
-                <use href="./images/sprite.svg#icon-arrow"></use>
-              </svg>
-              </div>
+              <a href="" rel="nofollow noopener" class="tests__link">
+                <div class="tests__background tests__background--third">
+                  <ul class="tests__background-list">
+                    <li class="tests__background-item">
+                      <a
+                        class="tests__background-link tests__background-link--motivation"
+                        >motivation</a
+                      >
+                    </li>
+                    <li class="tests__background-item">
+                      <a
+                        class="tests__background-link tests__background-link--work-hard"
+                        >work hard</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="tests__content">
+                  <div class="tests__text">
+                    <p class="tests__paragraph">Never give up</p>
+                    <p class="tests__paragraph">10 min</p>
+                  </div>
+                  <svg class="tests__icon" width="25">
+                    <use href="./images/sprite.svg#icon-arrow"></use>
+                  </svg>
+                </div>
               </a>
             </li>
           </ul>
@@ -114,15 +233,18 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="https://github.com/ElVent0" 
-        target="_blank"
-        rel="nofollow noopener" 
-        class="footer__link">
+        <a
+          href="https://github.com/ElVent0"
+          target="_blank"
+          rel="nofollow noopener"
+          class="footer__link"
+        >
           <svg class="footer__icon">
             <use href="./images/sprite.svg#icon-github"></use>
           </svg>
         </a>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

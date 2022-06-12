@@ -7,8 +7,31 @@
   background-size: cover;
   position: relative;
 }
+.hero__header {
+  display: flex;
+}
+.header__button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  position: relative;
+  z-index: 9999;
+  background-color: var(--color-background);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.header__burger-svg {
+  stroke: var(--color-main);
+  position: absolute;
+}
 .hero__logo {
   margin-bottom: 120px;
+  margin-right: auto;
+  display: block;
 }
 .hero__title {
   font-family: "Playfair Display";

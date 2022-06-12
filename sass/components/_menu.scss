@@ -1,0 +1,116 @@
+.mobile__menu {
+  position: fixed;
+  width: 100vw;
+  height: 148px;
+  top: 0;
+  transition: transform 300ms, visibility 300ms;
+  background: var(--color-main);
+  z-index: 10000;
+  overflow: auto;
+  display: flex;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    width: 40%;
+    right: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+}
+
+.close__btn {
+  border: none;
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-background);
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    right: 32px;
+  }
+}
+
+.close__icon {
+  stroke: var(--color-main);
+}
+
+.mobile__btn {
+  display: block;
+  width: 209px;
+  height: 44px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 19px;
+  background: #ffffff;
+  border: none;
+  border-radius: 22px;
+  align-items: center;
+  text-align: center;
+  color: var(--color-text);
+  transition: color 500ms ease;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--color-main);
+  }
+}
+
+.modal__vector {
+  margin-left: 15px;
+}
+.mobile__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 80%;
+  margin-right: auto;
+}
+.mobile__item {
+  background-color: rgb(224, 145, 0);
+  border-radius: 20px;
+  &:nth-child(2) {
+    background-color: rgb(146, 0, 224);
+  }
+  &:nth-child(3) {
+    background-color: rgb(0, 190, 224);
+  }
+  &:nth-child(4) {
+    background-color: rgb(164, 224, 0);
+  }
+  &:nth-child(5) {
+    background-color: rgb(224, 0, 71);
+  }
+}
+
+.mobile__link {
+  color: var(--color-background);
+  transition: color 500ms ease;
+  font-size: 14px;
+  display: block;
+  border-radius: 20px;
+  padding: 4px 10px;
+  &:hover,
+  &:focus {
+    color: var(--color-main);
+  }
+}
+
+.is-hidden {
+  transform: translateY(-100%);
+  pointer-events: none;
+  visibility: hidden;
+}
+
+// ----scroll off---
+.no-scroll {
+  overflow: hidden;
+
+  //   @include tablet {
+  //     overflow: auto;
+  //   }
+}
