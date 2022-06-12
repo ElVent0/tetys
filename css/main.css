@@ -79,11 +79,27 @@ ul {
   background-size: cover;
   position: relative;
 }
+.hero__motivation {
+  background-color: var(--color-background);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), color-stop(37%, rgba(0, 0, 0, 0.2)), to(rgba(255, 255, 255, 0))), url(../images/background-audio-1.jpg);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 37%, rgba(255, 255, 255, 0) 100%), url(../images/background-audio-1.jpg);
+  background-attachment: local, fixed;
+  padding: 55px 0 330px 0;
+}
 
 .hero__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.header__line {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  background-color: var(--color-main);
+  border-radius: 14px 14px 0 0;
+  bottom: 0;
 }
 
 .header__button {
@@ -106,10 +122,27 @@ ul {
           align-items: center;
   padding: 10px;
 }
+.header__button--motivation {
+  margin-left: auto;
+}
 
 .header__burger-svg {
   stroke: var(--color-main);
   position: absolute;
+}
+.header__burger-svg--home {
+  fill: var(--color-main);
+}
+
+.hero__title--second {
+  font-size: 22px;
+  font-weight: 100;
+  color: var(--color-background);
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .hero__logo {
@@ -267,6 +300,9 @@ ul {
 .tests {
   background-color: var(--color-main);
   padding: 65px 0 15px 0;
+}
+.tests--motivation {
+  padding: 15px 0 35px 0;
 }
 
 .tests__item {
@@ -461,6 +497,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-radius: 0 0 14px 14px;
 }
 @media screen and (min-width: 768px) {
   .mobile__menu {

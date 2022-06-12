@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tetis</title>
+    <link rel="icon" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="hero hero__motivation">
+      <div class="container container__hero">
+        <div class="hero__header">
+          <a href="./index.html" class="header__button">
+            <svg
+              width="20"
+              aria-label="Перемикач мобільного меню"
+              class="header__burger-svg header__burger-svg--home"
+              viewBox="0 0 32 32"
+            >
+              <use href="./images/sprite.svg#icon-home"></use>
+            </svg>
+          </a>
+          <button
+            class="header__button header__button--motivation"
+            type="button"
+            data-menu-button
+            aria-expanded="false"
+            data-modal-open
+          >
+            <svg
+              width="20"
+              aria-label="Перемикач мобільного меню"
+              class="header__burger-svg"
+              viewBox="0 0 32 32"
+            >
+              <use href="./images/sprite.svg#icon-Burger-btn"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="mobile__menu container__menu is-hidden" data-modal>
+        <ul class="mobile__list">
+          <li class="mobile__item">
+            <a href="./motivation.html" class="mobile__link" data-modal-home
+              >motivation</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="./motivation.html" class="mobile__link" data-modal-about
+              >work hard</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="./motivation.html" class="mobile__link" data-modal-how
+              >study</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="./motivation.html" class="mobile__link" data-modal-products
+              >relax</a
+            >
+          </li>
+          <li class="mobile__item">
+            <a href="./motivation.html" class="mobile__link" data-modal-contacts
+              >addrenaline</a
+            >
+          </li>
+        </ul>
+        <button class="close__btn" data-modal-close>
+          <svg width="20px" height="20px" class="close__icon">
+            <use href="./images/sprite.svg#icon-Burger-btn-close"></use>
+          </svg>
+        </button>
+      </div>
+      <h2 class="hero__title--second">Motivation</h2>
+      <div class="header__line"></div>
+    </div>
+    <div class="tests tests--motivation" id="tests">
+      <div class="container">
+        <ul class="tests__list">
+          <li class="tests__item">
+            <a
+              href="./audio-one.html"
+              rel="nofollow noopener"
+              class="tests__link"
+            >
+              <div class="tests__background tests__background--first">
+                <ul class="tests__background-list">
+                  <li class="tests__background-item">
+                    <a
+                      class="tests__background-link tests__background-link--motivation"
+                      >motivation</a
+                    >
+                  </li>
+                  <li class="tests__background-item">
+                    <a
+                      class="tests__background-link tests__background-link--work-hard"
+                      >work hard</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="tests__content">
+                <div class="tests__text">
+                  <p class="tests__paragraph">Never give up</p>
+                  <p class="tests__paragraph">10 min</p>
+                </div>
+                <svg class="tests__icon" width="25">
+                  <use href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="tests__item">
+            <a href="" rel="nofollow noopener" class="tests__link">
+              <div class="tests__background tests__background--second">
+                <ul class="tests__background-list">
+                  <li class="tests__background-item">
+                    <a
+                      class="tests__background-link tests__background-link--motivation"
+                      >motivation</a
+                    >
+                  </li>
+                  <li class="tests__background-item">
+                    <a
+                      class="tests__background-link tests__background-link--work-hard"
+                      >work hard</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="tests__content">
+                <div class="tests__text">
+                  <p class="tests__paragraph">Never give up</p>
+                  <p class="tests__paragraph">10 min</p>
+                </div>
+                <svg class="tests__icon" width="25">
+                  <use href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+          <li class="tests__item">
+            <a href="" rel="nofollow noopener" class="tests__link">
+              <div class="tests__background tests__background--third">
+                <ul class="tests__background-list">
+                  <li class="tests__background-item">
+                    <a
+                      class="tests__background-link tests__background-link--motivation"
+                      >motivation</a
+                    >
+                  </li>
+                  <li class="tests__background-item">
+                    <a
+                      class="tests__background-link tests__background-link--work-hard"
+                      >work hard</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="tests__content">
+                <div class="tests__text">
+                  <p class="tests__paragraph">Never give up</p>
+                  <p class="tests__paragraph">10 min</p>
+                </div>
+                <svg class="tests__icon" width="25">
+                  <use href="./images/sprite.svg#icon-arrow"></use>
+                </svg>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/menu.js"></script>
+  </body>
+</html>
