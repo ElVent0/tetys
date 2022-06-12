@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tetis</title>
+    <title>Do not give up</title>
     <link rel="icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./css/main.min.css" />
     <link
@@ -23,17 +23,85 @@
   </head>
   <body>
     <main class="main__audio">
-      <a href="./index.html" class="header__link-back">
-        <svg class="header__icon-back" width="30" height="30">
-          <use href="./images/sprite.svg#icon-arrow"></use>
-        </svg>
-      </a>
+      <div class="hero hero__audio">
+        <div class="container container__hero">
+          <div class="hero__header">
+            <a href="javascript:history.back()" class="header__button">
+              <svg
+                width="20"
+                aria-label="Перемикач мобільного меню"
+                class="header__burger-svg header__burger-svg--back"
+                viewBox="0 0 32 32"
+              >
+                <use href="./images/sprite.svg#icon-arrow"></use>
+              </svg>
+            </a>
+            <button
+              class="header__button header__button--motivation"
+              type="button"
+              data-menu-button
+              aria-expanded="false"
+              data-modal-open
+            >
+              <svg
+                width="20"
+                aria-label="Перемикач мобільного меню"
+                class="header__burger-svg"
+                viewBox="0 0 32 32"
+              >
+                <use href="./images/sprite.svg#icon-Burger-btn"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mobile__menu container__menu is-hidden" data-modal>
+          <ul class="mobile__list">
+            <li class="mobile__item">
+              <a href="./motivation.html" class="mobile__link" data-modal-home
+                >motivation</a
+              >
+            </li>
+            <li class="mobile__item">
+              <a href="./motivation.html" class="mobile__link" data-modal-about
+                >work hard</a
+              >
+            </li>
+            <li class="mobile__item">
+              <a href="./motivation.html" class="mobile__link" data-modal-how
+                >study</a
+              >
+            </li>
+            <li class="mobile__item">
+              <a
+                href="./motivation.html"
+                class="mobile__link"
+                data-modal-products
+                >relax</a
+              >
+            </li>
+            <li class="mobile__item">
+              <a
+                href="./motivation.html"
+                class="mobile__link"
+                data-modal-contacts
+                >addrenaline</a
+              >
+            </li>
+          </ul>
+          <button class="close__btn" data-modal-close>
+            <svg width="20px" height="20px" class="close__icon">
+              <use href="./images/sprite.svg#icon-Burger-btn-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
       <audio
         class="main__audio--one"
-        src="./audio/Never Give Up (Motivational Speech).mp3"
+        src="./audio/NeverGiveUp.mp3"
         controls
         preload="none"
       ></audio>
     </main>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
