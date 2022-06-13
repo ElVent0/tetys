@@ -3,7 +3,6 @@
   background-color: var(--color-background);
   background-image: url(../images/background-hero-3.jpg);
   background-repeat: no-repeat;
-  background-position: top;
   background-size: cover;
   position: relative;
   &__motivation {
@@ -14,7 +13,56 @@
         rgba(0, 0, 0, 0.2) 37%,
         rgba(255, 255, 255, 0) 100%
       ),
-      url(../images/background-audio-1.jpg);
+      url(../images/bg-audio-4.jpg);
+    background-attachment: local, fixed;
+    padding: 55px 0 330px 0;
+  }
+  &__work-hard {
+    background-color: var(--color-background);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.2) 37%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(../images/bg-work-hard.jpg);
+    background-attachment: local, fixed;
+    padding: 55px 0 330px 0;
+  }
+  &__study {
+    background-color: var(--color-background);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.2) 37%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(../images/bg-study.jpg);
+    background-attachment: local, fixed;
+    padding: 55px 0 330px 0;
+  }
+  &__relax {
+    background-color: var(--color-background);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.2) 37%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(../images/bg-relax.jpg);
+    background-attachment: local, fixed;
+    background-position: bottom;
+    padding: 55px 0 330px 0;
+  }
+  &__fire {
+    background-color: var(--color-background);
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.6) 0%,
+        rgba(0, 0, 0, 0.2) 37%,
+        rgba(255, 255, 255, 0) 100%
+      ),
+      url(../images/bg-audio-11.jpg);
     background-attachment: local, fixed;
     padding: 55px 0 330px 0;
   }
