@@ -31,19 +31,79 @@
   border-radius: 14px 14px 0 0;
   position: relative;
   &--first {
-    background-image: url(../images/nevergiveup.jpg);
+    background-image: url(../images/item-1.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 424px 160px;
   }
-  &--second {
-    background-image: url(../images/nevergiveup.jpg);
+  &--two {
+    background-image: url(../images/item-2.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 424px 160px;
   }
-  &--third {
-    background-image: url(../images/nevergiveup.jpg);
+  &--three {
+    background-image: url(../images/item-3.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--four {
+    background-image: url(../images/item-4.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--five {
+    background-image: url(../images/item-5.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--six {
+    background-image: url(../images/item-6.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--seven {
+    background-image: url(../images/item-7.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--eight {
+    background-image: url(../images/item-8.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--nine {
+    background-image: url(../images/item-9.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--ten {
+    background-image: url(../images/item-10.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--eleven {
+    background-image: url(../images/item-11.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--twelve {
+    background-image: url(../images/item-12.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 424px 160px;
+  }
+  &--thirteen {
+    background-image: url(../images/item-13.jpg);
     background-repeat: no-repeat;
     background-position: top;
     background-size: 424px 160px;
@@ -72,9 +132,18 @@
   &--work-hard {
     background-color: rgb(146, 0, 224);
   }
+  &--study {
+    background-color: rgb(0, 190, 224);
+  }
+  &--relax {
+    background-color: rgb(164, 224, 0);
+  }
+  &--fire {
+    background-color: rgb(224, 0, 71);
+  }
 }
 .tests__text {
-  max-width: 144px;
+  max-width: 160px;
   margin-right: auto;
 }
 .tests__paragraph {

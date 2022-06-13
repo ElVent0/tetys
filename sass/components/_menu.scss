@@ -68,12 +68,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  max-width: 80%;
+  max-width: 200px;
   margin-right: auto;
 }
 .mobile__item {
   background-color: rgb(224, 145, 0);
   border-radius: 20px;
+  &--fire {
+    width: 26px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &:nth-child(2) {
     background-color: rgb(146, 0, 224);
   }
@@ -89,18 +96,20 @@
 }
 
 .mobile__link {
+  padding: 5px 10px;
   color: var(--color-background);
   transition: color 500ms ease;
   font-size: 14px;
   display: block;
-  border-radius: 20px;
-  padding: 4px 10px;
+
   &:hover,
   &:focus {
     color: var(--color-main);
   }
 }
-
+.mobile__icon {
+  fill: var(--color-background);
+}
 .is-hidden {
   transform: translateY(-100%);
   pointer-events: none;
